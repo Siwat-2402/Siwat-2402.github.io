@@ -9,6 +9,56 @@ h1 {
 	color:midnightblue;
 	font-family:Cursive;
    }
+.fade-in {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
 </style>
 <body style="background-image: url(./assets/Cat.jpg);
 	background-size: 100%;
@@ -20,11 +70,10 @@ h1 {
 	<center>
 	<h3> My name is  </h3> <h1> <b> Siwat Phrommak.</b> </h1>
 	<br>
-	<img style=
-		"
-		border-radius:18%;
-		" 
+	<div class="fade-in">
+	<img style="border-radius:18%;" 
 	src="./assets/profile.jpg" width="240" height="320" />
+	</div>
 	</center>
 	<center><div style="border: 10px solid black; width:400px; height:400; margin:30px; padding:20;border-radius:12%;" > </div></center>
 </body>
